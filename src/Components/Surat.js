@@ -9,26 +9,16 @@ function Surat() {
   const [surat,setSurat] = useState([])
   const [src,setSrc] = useState('')
   const src1 =`https://server8.mp3quran.net/afs/${src}.mp3`
-  const [isload,setIsLoad] = useState(false)
+
   useEffect(()=>{
     fetch('http://api.alquran.cloud/v1/surah')
     .then(response => response.json())
     .then(json => {
-      // console.log(json.data)
       setSurat(json.data)
     })
 })
-const start = () => {
-  console.log(`https://server8.mp3quran.net/afs/${src}.mp3`)
-   let audio = new Audio(`https://server8.mp3quran.net/afs/${src}.mp3`)
-  // audio.play()
-  
-}
-useEffect((src)=>{
-  // new Audio(`https://server8.mp3quran.net/afs/${src}.mp3`).pause()
-  start()
-},[src])
-//console.log(e.number)
+
+
 
 
   return (
