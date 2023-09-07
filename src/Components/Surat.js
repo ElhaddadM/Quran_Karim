@@ -1072,7 +1072,7 @@ function Surat() {
     
        </div>
      </div>
-        <div className='w-25 h-25 my-3 '> Fin </div>
+        <div className='w-25 h-25 my-3 '> Failed Connexion ! </div>
      <footer className="fixed-bottom mt-2 mb-2" >
     
         <ReactAudioPlayer 
